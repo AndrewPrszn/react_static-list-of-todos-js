@@ -11,7 +11,7 @@ const TodoInfo = ({ todo }) => {
   return (
     <div className={completedClass}>
       <h2 className="TodoInfo__title">{todo.title}</h2>
-      <UserInfo user={user} />
+      {todo.user && <UserInfo user={user} />}
     </div>
   );
 };
