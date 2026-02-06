@@ -2,7 +2,7 @@
 import React from 'react';
 import { UserInfo } from '../UserInfo/UserInfo';
 
-const TodoInfo = ({ todo }) => {
+export const TodoInfo = ({ todo }) => {
   const user = todo.user || { name: todo.author, email: todo.email };
   const completedClass = todo.completed
     ? 'TodoInfo TodoInfo--completed'
@@ -15,5 +15,3 @@ const TodoInfo = ({ todo }) => {
     </div>
   );
 };
-
-export default TodoInfo;

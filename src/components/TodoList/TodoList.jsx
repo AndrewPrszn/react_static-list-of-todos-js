@@ -1,6 +1,6 @@
 // Add the required props
 import React from 'react';
-import TodoInfo from '../TodoInfo/TodoInfo';
+import { TodoInfo } from '../TodoInfo/TodoInfo';
 
 export const TodoList = ({ todos }) => (
   <div className="TodoList">
